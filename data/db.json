@@ -1,0 +1,46 @@
+{
+  "careers": [
+    {
+      "id": 1,
+      "title": "Senior React Developer",
+      "salary": 50000,
+      "location": "Ankara, Turkey"
+    },
+    {
+      "id": 2,
+      "title": "Plumber",
+      "salary": 40000,
+      "location": "Istanbul, Turkey"
+    },
+    {
+      "id": 3,
+      "title": "Gym Coach",
+      "salary": 75000,
+      "location": "Uganda"
+    },
+    {
+      "id": 4,
+      "title": "Senior React Native Developer",
+      "salary": 300000,
+      "location": "Leicester, UK"
+    },
+    {
+      "id": 5,
+      "title": "Tutorial Maker",
+      "salary": 35000,
+      "location": "Liverpool, UK"
+    },
+    {
+      "id": 6,
+      "title": "Mafia Manager",
+      "salary": 500000,
+      "location": "Kreusberg, Germany"
+    },
+    {
+      "id": 7,
+      "title": "Code Tester",
+      "salary": 30000,
+      "location": "Kansas City, US"
+    }
+  ]
+}
