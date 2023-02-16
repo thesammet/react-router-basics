@@ -12,7 +12,8 @@ import CareersLayout from './layouts/CareersLayout';
 import Faq from './pages/help/Faq'
 import Contact from './pages/help/Contact'
 import Error from './pages/Error';
-import Careers, { dataLoader } from './pages/Careers';
+import Careers, { careersDataLoader } from './pages/careers/Careers';
+import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +28,12 @@ const router = createBrowserRouter(
         <Route
           index
           element={<Careers />}
-          loader={dataLoader} />
+          loader={careersDataLoader} />
+        <Route
+          path=':id'
+          element={<CareerDetails />}
+          loader={careerDetailsLoader}
+        />
       </Route>
       <Route path='*' element={<Error />} />
     </Route>
