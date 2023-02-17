@@ -18,5 +18,8 @@ export default function Careers() {
 //act like a service but in local using json-server
 export const careersDataLoader = async () => {
     const res = await fetch('http://localhost:4000/careers')
+    if (!res.ok) {
+        throw Error('Could not found that career!')
+    }
     return res.json()
 }
