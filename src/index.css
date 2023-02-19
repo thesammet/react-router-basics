@@ -26,6 +26,12 @@ button {
   cursor: pointer;
 }
 
+header  {
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header nav {
   display: flex;
   gap: 16px;
@@ -33,6 +39,7 @@ header nav {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 header nav h1 {
   margin-right: auto;
   border-bottom: 3px solid var(--primary);
@@ -124,6 +131,25 @@ form label span {
   margin: 20px 0;
 }
 
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px 0;
+}
 
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
 
-/* breadcrumbs */
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child::after{
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
